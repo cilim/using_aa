@@ -1,0 +1,6 @@
+<% @products.each do |product| %>
+    <h4><%= product.name %></h4>
+    <p><%= product.price %></p>
+    <p>Kategorija: <%= product.category.name %></p>
+    <%= link_to "Read more", product_path(product) %>
+<% end %>
